@@ -1,0 +1,42 @@
+div.infoIntro{
+  position: absolute;
+  top:0;
+  left: 35%;
+
+}
+div.infoIntro h4{
+  font-size: 25px;
+}
+div.infoContent{
+  position: absolute;
+  top:50px;
+  width: 60%;
+  left: 0;
+  display: inline-block;
+}
+
+div.flag{
+  width: 40%;
+  top:50px;
+  right: 0;
+  position: absolute;
+  height: 156px;
+  display: inline-block;
+  border: 1px black solid;
+}
+img{
+  width: 100%;
+  height: 156px;
+}
+input{
+  font-size: 25px;
+  background-color: inherit;
+}
+mat-card{
+  background-color: #c2185b;
+}
+div.fullAddInfo{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}

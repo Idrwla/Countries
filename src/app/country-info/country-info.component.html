@@ -1,0 +1,17 @@
+<div class="infoIntro">
+  <h4>Information about Country</h4>
+</div>
+<div class="mainContent">
+  <div class="infoContent">
+    <mat-card *ngIf="CountryInfo">Title:<input (input)="changeTitle($event)" value="{{CountryInfo.title}}"></mat-card>
+    <mat-card *ngIf="CountryInfo">Area:<input (input)="changeArea($event)" value="{{CountryInfo.area |number}}"></mat-card>
+    <mat-card *ngIf="CountryInfo">Additional:<input (input)="changeAdditionalInfo($event)" value="{{CountryInfo.additionalInfoUrl}}"></mat-card>
+  </div>
+  <div class="flag">
+    <img *ngIf="CountryInfo" [src]="CountryInfo.flag.toString()">
+  </div>
+  <div class="fullAddInfo" *ngIf="CountryInfo" >
+    <p>{{CountryInfo.additionalInfoUrl}}</p>
+  </div>
+</div>
+

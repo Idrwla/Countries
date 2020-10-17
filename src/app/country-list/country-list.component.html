@@ -1,0 +1,21 @@
+<div class="countryList">
+  <mat-grid-list cols="2" rowHeight="2:1">
+    <mat-grid-tile rowspan="2">
+      <div class="listIntro">
+        <p>Country list</p>
+        <mat-divider [vertical]="true"></mat-divider>
+      </div>
+
+      <div class="cList">
+        <mat-list *ngFor="let cTitle of ListOfCountries;last as last">
+          <button (click)="seeAddInfo(cTitle)"><mat-list-item><h4>{{ cTitle.title}}</h4></mat-list-item></button>
+        </mat-list><hr>
+
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile><app-country-info [CountryInfo]="currentCountry"></app-country-info></mat-grid-tile>
+<!--    <mat-grid-tile></mat-grid-tile>-->
+    <mat-grid-tile>Change country info</mat-grid-tile>
+  </mat-grid-list>
+
+</div>
